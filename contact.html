@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LØWEXA — Contact</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #f5f0e8; --sage: #4a6741; --sage-light: #6b8f62;
+    --sage-dark: #2d3f2a; --gold: #c4a55a; --text: #1a1a1a;
+    --text-muted: #6b6b6b; --white: #ffffff;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--text); }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 20px 60px; background: rgba(245,240,232,0.92);
+    backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.06);
+  }
+  .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.3rem; letter-spacing: 0.15em; color: var(--text); text-decoration: none; }
+  .nav-links { display: flex; gap: 36px; list-style: none; }
+  .nav-links a { font-size: 0.85rem; color: var(--text-muted); text-decoration: none; letter-spacing: 0.05em; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--text); }
+
+  main { padding: 140px 60px 100px; max-width: 700px; margin: 0 auto; }
+
+  .page-label { font-size: 0.72rem; letter-spacing: 0.2em; color: var(--gold); text-transform: uppercase; margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
+  .page-label::before { content: ''; display: block; width: 32px; height: 1px; background: var(--gold); }
+
+  h1 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 500; line-height: 1.2; color: var(--sage-dark); margin-bottom: 16px; }
+  h1 em { font-style: italic; color: var(--sage); }
+
+  .subtitle { font-size: 1rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 48px; }
+
+  .divider { width: 60px; height: 1px; background: var(--gold); margin-bottom: 48px; opacity: 0.6; }
+
+  .contact-card {
+    background: var(--white); border-radius: 8px; padding: 48px;
+    box-shadow: 0 4px 40px rgba(0,0,0,0.06); border: 1px solid rgba(0,0,0,0.06);
+    display: flex; align-items: center; gap: 24px;
+  }
+  .contact-icon {
+    width: 56px; height: 56px; background: linear-gradient(135deg, var(--sage), var(--sage-light));
+    border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .contact-icon svg { width: 24px; height: 24px; stroke: white; stroke-width: 2; fill: none; }
+  .contact-info h3 { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--sage-dark); margin-bottom: 8px; }
+  .contact-info p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 12px; line-height: 1.6; }
+  .contact-info a { color: var(--sage); font-weight: 500; text-decoration: none; font-size: 1rem; }
+  .contact-info a:hover { text-decoration: underline; }
+
+  .response-note { margin-top: 32px; font-size: 0.85rem; color: var(--text-muted); text-align: center; }
+
+  footer {
+    background: var(--sage-dark); color: rgba(255,255,255,0.5);
+    padding: 48px 60px; text-align: center; font-size: 0.78rem; letter-spacing: 0.05em;
+  }
+  footer a { color: rgba(255,255,255,0.5); text-decoration: none; margin: 0 16px; transition: color 0.2s; }
+  footer a:hover { color: var(--white); }
+  footer .footer-logo { font-family: 'Playfair Display', serif; font-size: 1.1rem; letter-spacing: 0.15em; color: var(--white); margin-bottom: 20px; display: block; }
+  footer .footer-links { margin-bottom: 20px; }
+
+  @media (max-width: 600px) {
+    nav { padding: 20px 24px; } .nav-links { display: none; }
+    main { padding: 100px 24px 80px; }
+    .contact-card { flex-direction: column; padding: 32px 24px; }
+    footer { padding: 40px 24px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">LØWEXA</a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="page-label">Get In Touch</div>
+  <h1>We're here to <em>help</em></h1>
+  <p class="subtitle">Have a question about your order or the guide? Reach out and we'll get back to you as soon as possible.</p>
+  <div class="divider"></div>
+
+  <div class="contact-card">
+    <div class="contact-icon">
+      <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    </div>
+    <div class="contact-info">
+      <h3>Email us</h3>
+      <p>For orders, questions, or anything else — we respond within 24 hours.</p>
+      <a href="mailto:dynamiccj7@gmail.com">dynamiccj7@gmail.com</a>
+    </div>
+  </div>
+
+  <p class="response-note">We aim to respond to all messages within 1 business day.</p>
+</main>
+
+<footer>
+  <span class="footer-logo">LØWEXA</span>
+  <div class="footer-links">
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/privacy.html">Privacy Policy</a>
+    <a href="/terms.html">Terms</a>
+    <a href="/refunds.html">Refund Policy</a>
+  </div>
+  <p>© 2026 LØWEXA. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

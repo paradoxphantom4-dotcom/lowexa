@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LØWEXA — About Us</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #f5f0e8;
+    --sage: #4a6741;
+    --sage-light: #6b8f62;
+    --sage-dark: #2d3f2a;
+    --gold: #c4a55a;
+    --text: #1a1a1a;
+    --text-muted: #6b6b6b;
+    --white: #ffffff;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--text); }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 20px 60px;
+    background: rgba(245,240,232,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+  }
+  .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.3rem; letter-spacing: 0.15em; color: var(--text); text-decoration: none; }
+  .nav-links { display: flex; gap: 36px; list-style: none; }
+  .nav-links a { font-size: 0.85rem; color: var(--text-muted); text-decoration: none; letter-spacing: 0.05em; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--text); }
+
+  main { padding: 140px 60px 100px; max-width: 800px; margin: 0 auto; }
+
+  .page-label {
+    font-size: 0.72rem; letter-spacing: 0.2em; color: var(--gold);
+    text-transform: uppercase; margin-bottom: 16px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .page-label::before { content: ''; display: block; width: 32px; height: 1px; background: var(--gold); }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 500; line-height: 1.2;
+    color: var(--sage-dark); margin-bottom: 40px;
+  }
+  h1 em { font-style: italic; color: var(--sage); }
+
+  .divider { width: 60px; height: 1px; background: var(--gold); margin-bottom: 40px; opacity: 0.6; }
+
+  p { font-size: 1rem; line-height: 1.85; color: var(--text-muted); margin-bottom: 24px; }
+  p strong { color: var(--text); font-weight: 500; }
+
+  .mission-block {
+    background: var(--white);
+    border-radius: 8px;
+    padding: 40px 48px;
+    margin: 48px 0;
+    border-left: 3px solid var(--sage);
+  }
+  .mission-block p { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-style: italic; color: var(--sage-dark); line-height: 1.8; margin: 0; }
+
+  footer {
+    background: var(--sage-dark); color: rgba(255,255,255,0.5);
+    padding: 48px 60px; text-align: center; font-size: 0.78rem; letter-spacing: 0.05em;
+  }
+  footer a { color: rgba(255,255,255,0.5); text-decoration: none; margin: 0 16px; transition: color 0.2s; }
+  footer a:hover { color: var(--white); }
+  footer .footer-logo { font-family: 'Playfair Display', serif; font-size: 1.1rem; letter-spacing: 0.15em; color: var(--white); margin-bottom: 20px; display: block; }
+  footer .footer-links { margin-bottom: 20px; }
+
+  @media (max-width: 600px) {
+    nav { padding: 20px 24px; }
+    .nav-links { display: none; }
+    main { padding: 100px 24px 80px; }
+    .mission-block { padding: 28px 24px; }
+    footer { padding: 40px 24px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">LØWEXA</a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="page-label">Our Story</div>
+  <h1>We believe microplastics are one of the greatest <em>silent threats</em> of our time</h1>
+  <div class="divider"></div>
+
+  <p>LØWEXA was founded with one clear mission: to make the truth about microplastics accessible to everyone. We see microplastics as an enormous threat to humanity — and we believe that education and awareness are the first steps toward reclaiming our health.</p>
+
+  <p>Every day, we unknowingly absorb thousands of microplastic particles through the water we drink, the food we eat, and the air we breathe. The science is clear. The impact on our hormones, our energy, and our long-term health is real — yet most people have never heard of it.</p>
+
+  <div class="mission-block">
+    <p>"Microplastics are an enormous threat to humanity. Education and awareness are the first step to making our bodies healthy again."</p>
+  </div>
+
+  <p>That's why we created <strong>The Microplastic-Free Life</strong> — a practical, no-nonsense guide that shows you exactly what to eliminate, what to swap, and how to protect yourself starting today. No supplements. No expensive gadgets. Just clear, actionable information.</p>
+
+  <p>For questions or anything else, reach us at <strong>dynamiccj7@gmail.com</strong></p>
+</main>
+
+<footer>
+  <span class="footer-logo">LØWEXA</span>
+  <div class="footer-links">
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/privacy.html">Privacy Policy</a>
+    <a href="/terms.html">Terms</a>
+    <a href="/refunds.html">Refund Policy</a>
+  </div>
+  <p>© 2026 LØWEXA. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
